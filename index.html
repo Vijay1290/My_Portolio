@@ -1,288 +1,303 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Portfolio</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-      <script src="https://kit.fontawesome.com/0c9d985b68.js" crossorigin="anonymous"></script>
-   </head>
-   <style>
-      .btn-outline-light:hover {
-      background-color: #0077b3;
-      border-color: #0077b3;
-      }
-      h1 {
-      color:#0077b3;
-      }
-      .navbar-nav {
-      padding-right: 20px;
-      }
-      .nav-item {
-      padding: 10px;
-      }
-      .nav-link {
-      font-size: 20px;
-      }
-      a:hover{
-      color: white;
-      background-color : #0077b3 !important; 
-      }
-      .centered-div {
-      height: 50rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding-top: 30px;
-      margin-top: 30px;
-      }
-      .attraction-name {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      }
-      .skill-container {
-      height: 10px;
-      background-color: #f1f1f1;
-      border-radius: 5px;
-      overflow: hidden;
-      }
-      .skill-fill {
-      height: 100%;
-      background-color: #3498db;
-      transition: width 0.5s ease-in-out;
-      }
-      .contact-icon {
-      font-size: 24px;
-      color: #3498db;
-      margin-right: 10px;
-      }
-      .contact-info {
-      margin-bottom: 20px;
-      }
-      .design{
-      background-color: #dbecff70;
-      padding: 1rem;
-      }
-      h1{
-      padding: 10px;
-      border-bottom: 3px solid rgba(12, 160, 206, 0.87);
-      }
-      .borderclass{
-      border: 3px solid #0077b3;
-      }
-      .text-center {
-      text-align: center!important;
-      }
-      .design1{
-      padding: 3px;
-      border-bottom: 3px solid rgba(12, 160, 206, 0.87);
-      }
-      .other_works{
-      text-decoration: none;
-      color:black;
-      text-align: center!important;
-      padding: 10px;
-      }
-      li{
-      padding-bottom: 10px;
-      }
-   </style>
-   <body>
-      <!--Navbar Section-->
-      <nav class="navbar navbar-expand-lg navbar-light mb-3" style="background: linear-gradient(to right, #33cccc, #0077b3); position: fixed; top: 0; width: 100%;">
-         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">
-            Vijay Sabrole
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-               <ul class="navbar-nav" style="padding-right: 20px;">
-                  <li class="nav-item" style="padding: 10px;">
-                     <a class="nav-link text-white" href="#Home" style="font-size: 20px;">Home</a>
-                  </li>
-                  <li class="nav-item" style="padding: 10px;">
-                     <a class="nav-link text-white" href="#About" style="font-size: 20px;">About</a>
-                  </li>
-                  <li class="nav-item" style="padding: 10px;">
-                     <a class="nav-link text-white" href="#Skills" style="font-size: 20px;">Skills</a>
-                  </li>
-                  <li class="nav-item" style="padding: 10px;">
-                     <a class="nav-link text-white" href="#" style="font-size: 20px;">Resume</a>
-                  </li>
-                  <li class="nav-item" style="padding: 10px;">
-                     <a class="nav-link text-white" href="#Projects" style="font-size: 20px;">Projects</a>
-                  </li>
-                  <li class="nav-item dropdown" style="padding: 10px;">
-                     <a class="nav-link dropdown-toggle text-white" href="" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
-                     Contact
-                     </a>
-                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="contactDropdown">
-                        <a class="dropdown-item" href="https://www.instagram.com/invites/contact/?i=ulpw4z3rprq9&utm_content=l2q576k"><i class="fab fa-instagram" style="color: #E4405F;"></i> Instagram</a>
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/vijay-sabrole-a1a591275"><i class="fab fa-linkedin" style="color: #0A66C2;"></i> LinkedIn</a>
-                        <a class="dropdown-item" href="https://www.facebook.com/vijay.sabrole.1"><i class="fab fa-facebook" style="color: #3b5998;"></i> Facebook</a>
-                        <a class="dropdown-item" href="https://github.com/Vijay1290"><i class="fab fa-github" style="color: #171515;"></i> GitHub</a>
-                        <a class="dropdown-item" href="mailto:vijaysabrole420@gmail.com.com" style="color: black;"><i class="far fa-envelope"></i> Email</a>
-                        <a class="dropdown-item" href="tel:+919370270595"><i class="fas fa-phone" style="color: black;"></i> Mobile No.</a>
-                     </div>
-                  </li>
-               </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/0c9d985b68.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <style>
+        body{
+        overflow-x: hidden;
+        }
+        .btn-outline-light:hover {
+        background-color: #0077b3;
+        border-color: #0077b3;
+        }
+        h1 {
+        color:#0077b3;
+        }
+        .navbar-nav {
+        padding-right: 20px;
+        }
+        .nav-item {
+        padding: 10px;
+        }
+        .nav-link {
+        font-size: 20px;
+        }
+        a:hover{
+        color: white;
+        background-color : #0077b3 !important; 
+        }
+        .centered-div {
+        height: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 30px;
+        }
+        .name {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        }
+        .skill-container {
+        height: 10px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        overflow: hidden;
+        }
+        .fill {
+        height: 100%;
+        background-color: #3498db;
+        transition: width 0.5s ease-in-out;
+        }
+        .design{
+        background-color: #dbecff70;
+        padding: 1rem;
+        }
+        h1{
+        padding: 10px;
+        border-bottom: 3px solid rgba(12, 160, 206, 0.87);
+        }
+        .borderclass{
+        border: 3px solid #0077b3;
+        }
+        .text-center {
+        text-align: center!important;
+        }
+        .design1{
+        padding: 3px;
+        border-bottom: 3px solid rgba(12, 160, 206, 0.87);
+        }
+        .other_works{
+        text-decoration: none;
+        color:black;
+        text-align: center!important;
+        padding: 10px;
+        }
+        li{
+        padding-bottom: 10px;
+        }
+    </style>
+    <body>
+        <!--Navbar Section Starts-->
+        <nav class="navbar navbar-expand-lg navbar-light mb-3" style="background: linear-gradient(to right, #33cccc, #0077b3); top: 0; width: 100%;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                Vijay Sabrole
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" style="padding-right: 20px;">
+                        <li class="nav-item" style="padding: 10px;">
+                            <a class="nav-link text-white" href="#Home" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item" style="padding: 10px;">
+                            <a class="nav-link text-white" href="#About" style="font-size: 20px;">About</a>
+                        </li>
+                        <li class="nav-item" style="padding: 10px;">
+                            <a class="nav-link text-white" href="#Skills" style="font-size: 20px;">Skills</a>
+                        </li>
+                        <li class="nav-item" style="padding: 10px;">
+                            <a class="nav-link text-white" href="#" style="font-size: 20px;">Resume</a>
+                        </li>
+                        <li class="nav-item" style="padding: 10px;">
+                            <a class="nav-link text-white" href="#Projects" style="font-size: 20px;">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown" style="padding: 10px;">
+                            <a class="nav-link dropdown-toggle text-white" href="" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+                            Contact
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="contactDropdown">
+                                <a class="dropdown-item" href="https://www.instagram.com/invites/contact/?i=ulpw4z3rprq9&utm_content=l2q576k"><i class="fab fa-instagram" style="color: #E4405F;"></i> Instagram</a>
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/vijay-sabrole-a1a591275"><i class="fab fa-linkedin" style="color: #0A66C2;"></i> LinkedIn</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/vijay.sabrole.1"><i class="fab fa-facebook" style="color: #3b5998;"></i> Facebook</a>
+                                <a class="dropdown-item" href="https://github.com/Vijay1290"><i class="fab fa-github" style="color: #171515;"></i> GitHub</a>
+                                <a class="dropdown-item" href="mailto:vijaysabrole420@gmail.com.com" style="color: black;"><i class="far fa-envelope"></i> Email</a>
+                                <a class="dropdown-item" href="tel:+919370270595"><i class="fas fa-phone" style="color: black;"></i> Mobile No.</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </nav>
-      <!-- Home Section -->
-      <div class="container" id="Home">
-         <div class="centered-div">
-            <img src="me.webp" alt="Attraction Image" class="img-fluid" style="height: 500px; width: 500px;">
-            <div class="attraction-name">Vijay Sabrole</div>
-         </div>
-      </div>
-      <!-- About Section -->
-      <div class="container mb-3 design" id="About">
-         <div class="row d-flex align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-               <img src="me.webp" class="img-fluid" alt="Image">
+        </nav>
+        <!--Navbar Section Ends-->
+        <!-- Home Section Starts-->
+        <div class="container" id="Home">
+            <div class="centered-div">
+                <img src="me.jpg" alt="Image" data-aos="fade-right" data-aos-duration="3000" class="img-fluid borderclass" style="height: 500px;">
+                <div class="name">
+                    <p class="design1"><span id="type"></span><span id="cursor">|</span></p>
+                </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center">
-               <div>
-                  <h1 class="mb-4" style="color: black;">About Me</h1>
-                  <h4 class="mb-4" style="color: black; text-align: center;">Web developer & Python developer</h4>
-                  <ul class="list-unstyled" style="font-size: 20px">
-                     <li>⇰ Have experience with Python, OOP concepts and Django and Flask frameworks.</li>
-                     <li>⇰ Created, developed and managed web development projects.</li>
-                     <li>⇰ Got experince with MYSQL</li>
-                  </ul>
-                  <hr style="background-color: rgba(12, 160, 206, 0.87);; height: 3px;">
-                  <ul class="list-unstyled" style="font-size: 20px">
-                     <li>⇰ Birth Date:  08/03/2003</li>
-                     <li>⇰ Phone: +919370270595</li>
-                     <li>⇰ Email: vijaysabrole420@gmail.com</li>
-                     <li>⇰ Address: Aurgangabad, Maharashtra</li>
-                  </ul>
-               </div>
+        </div>
+        <!-- Home Section Ends-->
+        <!-- About Section Starts -->
+        <div class="container mb-3 design" id="About">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="image.jpg" class="img-fluid borderclass" alt="Image">
+                </div>
+                <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-duration="3000">
+                    <div>
+                        <h1 class="mb-4" style="color: black;">About Me</h1>
+                        <h4 class="mb-4" style="color: black; text-align: center;">Web developer & Python developer</h4>
+                        <ul class="list-unstyled" style="font-size: 20px">
+                            <li>⇰ Have experience with Python, OOP concepts and Django and Flask frameworks.</li>
+                            <li>⇰ Created, developed and managed web development projects.</li>
+                            <li>⇰ Got experince with MYSQL</li>
+                        </ul>
+                        <hr style="background-color: rgba(12, 160, 206, 0.87);; height: 3px;">
+                        <ul class="list-unstyled" style="font-size: 20px">
+                            <li>⇰ Birth Date:  08/03/2003</li>
+                            <li>⇰ Phone: +919370270595</li>
+                            <li>⇰ Email: vijaysabrole420@gmail.com</li>
+                            <li>⇰ Address: Aurgangabad, Maharashtra</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- Skill Section -->
-      <div class="container mb-4 mt-4" id="Skills">
-         <h1 class="mb-4" style="color: black;">Skills</h1>
-         <div class="row mt-4 justify-content-center">
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 100%;"></div>
-               </div>
-               <h5 class="mt-1">C</h5>
+        </div>
+        <!-- About Section Ends -->
+        <!-- Skill Section Starts -->
+        <div class="container mb-4 mt-4" id="Skills" data-aos="fade-right" data-aos-duration="3000">
+            <h1 class="mb-4" style="color: black;">Skills</h1>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <h5 class="mt-1">C</h5>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <h5 class="mt-1">C++</h5>
+                </div>
             </div>
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 100%;"></div>
-               </div>
-               <h5 class="mt-1">C++</h5>
+            <div class="row mt-1 justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 60%;"></div>
+                    </div>
+                    <h5 class="mt-1">Core & Advanced JAVA</h5>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 90%;"></div>
+                    </div>
+                    <h5 class="mt-1">Python</h5>
+                </div>
             </div>
-         </div>
-         <div class="row mt-1 justify-content-center">
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 60%;"></div>
-               </div>
-               <h5 class="mt-1">Core & Advanced JAVA</h5>
+            <div class="row mt-1 justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <h5 class="mt-1">SQL</h5>
+                </div>
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                    <h5 class="mt-1">Django & Flask</h5>
+                </div>
             </div>
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 90%;"></div>
-               </div>
-               <h5 class="mt-1">Python</h5>
+            <div class="row mt-1 justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="skill-container">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                    <h5 class="mt-1">Core Subjects</h5>
+                </div>
+                <div class="col-md-5 mb-4">
+                </div>
             </div>
-         </div>
-         <div class="row mt-1 justify-content-center">
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 100%;"></div>
-               </div>
-               <h5 class="mt-1">SQL</h5>
+        </div>
+        <!-- Skill Section Ends-->
+        <!-- Projects & Works Starts -->
+        <div class="container mb-4 design" id="Projects">
+            <h1 class="mb-4" style="color: black;">Projects & Works</h1>
+            <div class="row mb-4">
+                <div class="col-md-6" data-aos="flip-left" data-aos-duration="3000">
+                    <a href="https://github.com/Vijay1290/ResumeBuilder.git">
+                    <img src="1.png" alt="Section 1" class="img-fluid borderclass">
+                    </a>
+                    <div class="text-center mt-1"><span class="design1">Resume Builder</span></div>
+                </div>
+                <div class="col-md-6" data-aos="flip-left" data-aos-duration="3000">
+                    <a href="https://vijay1290.github.io/Remine-India-Website/">
+                    <img src="2.png" alt="Section 1" class="img-fluid borderclass">
+                    </a>
+                    <div class="text-center mt-1"><span class="design1">Remine India</span></div>
+                </div>
             </div>
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 80%;"></div>
-               </div>
-               <h5 class="mt-1">Django & Flask</h5>
+            <div class="row mb-4">
+                <div class="col-md-6" data-aos="flip-left" data-aos-duration="3000">
+                    <a href="http://abca.pythonanywhere.com/">
+                    <img src="3.png" alt="Section 1" class="img-fluid borderclass">
+                    </a>
+                    <div class="text-center mt-1"><span class="design1">CGPA & SGPA</span></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section" data-aos="flip-left" data-aos-duration="3000">
+                        <a href="https://github.com/Vijay1290/Expense-Tracker-.git">
+                        <img src="4.png" alt="Section 1" class="img-fluid borderclass">
+                        </a>
+                        <div class="text-center mt-1"><span class="design1">Expense Tracker</span></div>
+                    </div>
+                </div>
+                <div class="row mb-4 mt-4" data-aos="fade-right" data-aos-duration="3000">
+                    <h2 class="mb-4" style="color: black; text-align: center;">
+                        Other Works
+                    </h2>
+                    <div class="col">
+                        <div class="text-center mt-1"><a href="https://github.com/Vijay1290/Personal-AI-Voice-Assistant.git" class="other_works">Person AI Assistant</a></div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center mt-1"><a href="https://github.com/Vijay1290/User-Management-API.git" class="other_works">User Management API</a></div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center mt-1"><a href="https://github.com/Vijay1290/TicTacToe.git" class="other_works">Tic Tac Toe Game</a></div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="row mt-1 justify-content-center">
-            <div class="col-md-5 mb-4">
-               <div class="skill-container">
-                  <div class="skill-fill" style="width: 80%;"></div>
-               </div>
-               <h5 class="mt-1">Core Subjects</h5>
-            </div>
-            <div class="col-md-5 mb-4">
-            </div>
-         </div>
-      </div>
-      <!-- Projects & Works -->
-      <div class="container mb-4 design" id="Projects">
-         <h1 class="mb-4" style="color: black;">Projects & Works</h1>
-         <div class="row mb-4">
-            <div class="col-md-6 ">
-               <div class="section">
-                  <a href="https://github.com/Vijay1290/ResumeBuilder.git">
-                  <img src="1.png" alt="Section 1" class="img-fluid borderclass">
-                  </a>
-                  <div class="text-center mt-1"><span class="design1">Resume Builder</span></div>
-               </div>
-            </div>
-            <div class="col-md-6 ">
-               <div class="section">
-                  <a href="https://vijay1290.github.io/Remine-India-Website/">
-                  <img src="2.png" alt="Section 1" class="img-fluid borderclass">
-                  </a>
-                  <div class="text-center mt-1"><span class="design1">Remine India</span></div>
-               </div>
-            </div>
-         </div>
-         <div class="row mb-4">
-            <div class="col-md-6 ">
-               <div class="section">
-                  <a href="http://abca.pythonanywhere.com/">
-                  <img src="3.png" alt="Section 1" class="img-fluid borderclass">
-                  </a>
-                  <div class="text-center mt-1"><span class="design1">CGPA & SGPA</span></div>
-               </div>
-            </div>
-            <div class="col-md-6 ">
-               <div class="section">
-                  <a href="https://github.com/Vijay1290/Expense-Tracker-.git">
-                  <img src="4.png" alt="Section 1" class="img-fluid borderclass">
-                  </a>
-                  <div class="text-center mt-1"><span class="design1">Expense Tracker</span></div>
-               </div>
-            </div>
-         </div>
-         <div class="row mb-4 mt-4">
-            <h2 class="mb-4" style="color: black; text-align: center;">
-            Other Works</h1>
-            <div class="col">
-               <div class="section">
-                  <div class="text-center mt-1"><a href="https://github.com/Vijay1290/Personal-AI-Voice-Assistant.git" class="other_works">Person AI Assistant</a></div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="section">
-                  <div class="text-center mt-1"><a href="https://github.com/Vijay1290/User-Management-API.git" class="other_works">User Management API</a></div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="section">
-                  <div class="text-center mt-1"><a href="https://github.com/Vijay1290/TicTacToe.git" class="other_works">Tic Tac Toe Game</a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-   </body>
+        </div>
+        <!-- Projects & Works Ends -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script>
+            var i = 0;
+            var txt = 'Vijay Sabrole'; 
+            var speed = 400; 
+            
+            function typeWriter() {
+            var type = document.getElementById("type");
+            var cursor = document.getElementById("cursor");
+            if (i < txt.length) {
+             type.innerHTML += txt.charAt(i);
+             i++;
+             setTimeout(typeWriter, speed);
+            }
+            
+            else {
+             cursor.style.display = "none";
+            }
+            }
+            window.addEventListener('DOMContentLoaded', typeWriter);
+        </script>
+    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
