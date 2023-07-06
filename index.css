@@ -1,5 +1,5 @@
 body{
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 .btn-outline-light:hover {
 background-color: #0077b3;
@@ -80,6 +80,15 @@ text-align: center!important;
 }
 li{
 padding-bottom: 10px;
+}
+.view_button
+{
+    background: #0077b3; 
+    color: white;
+}
+.view_button:hover{
+color: white !important;
+background-color : #33cccc !important; 
 }
 @media only screen and (max-width: 480px){
     html, body{
