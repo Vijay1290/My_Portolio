@@ -1,3 +1,11 @@
+var loader = document.getElementById("loader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
+
+
 var i = 0;
 var txt = "I'm Vijay Sabrole";
 var speed = 400;
@@ -16,6 +24,7 @@ function typeWriter() {
 window.addEventListener('DOMContentLoaded', typeWriter);
 
 
+
 function toggleView() {
     var section = document.getElementById("view_more");
     var button = document.querySelector(".view_button");
@@ -30,3 +39,5 @@ function toggleView() {
         button.textContent = "View More";
     }
 }
+
+
