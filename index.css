@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .btn-outline-light:hover {
 background-color: #0077b3;
