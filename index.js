@@ -21,7 +21,7 @@ function typeWriter() {
         cursor.style.display = "none";
     }
 }
-window.addEventListener('load', typeWriter);
+window.addEventListener("load", typeWriter);
 
 
 
