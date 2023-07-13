@@ -1,4 +1,4 @@
-var loader = document.getElementById("loader");
+var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
     loader.style.display = "none";
@@ -21,7 +21,7 @@ function typeWriter() {
         cursor.style.display = "none";
     }
 }
-window.addEventListener("load", typeWriter);
+window.addEventListener('load', typeWriter);
 
 
 
