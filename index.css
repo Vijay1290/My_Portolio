@@ -28,8 +28,6 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 text-align: center;
-padding-top: 30px;
-margin-top: 30px;
 }
 .name {
 font-family: 'Playfair Display', serif;
@@ -97,4 +95,14 @@ background-color : #33cccc !important;
     padding: 0;
     overflow-x: hidden;
     }
+}
+#loader{
+    background: #000 url(Images/loading.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
 }
