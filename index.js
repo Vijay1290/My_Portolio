@@ -21,7 +21,7 @@ function typeWriter() {
         cursor.style.display = "none";
     }
 }
-window.addEventListener('DOMContentLoaded', typeWriter);
+window.addEventListener('load', typeWriter);
 
 
 
