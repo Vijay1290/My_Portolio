@@ -1,7 +1,9 @@
+var body = document.body;
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
     loader.style.display = "none";
+    body.style.overflowY = "scroll";
 })
 
 
