@@ -1,111 +1,169 @@
-body{
+body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 .btn-outline-light:hover {
-background-color: #0077b3;
-border-color: #0077b3;
+    background-color: #0077b3;
+    border-color: #0077b3;
 }
+
 h1 {
-color:#0077b3;
+    color: #0077b3;
 }
+
 .navbar-nav {
-padding-right: 20px;
+    padding-right: 20px;
 }
+
 .nav-item {
-padding: 10px;
+    padding: 10px;
 }
+
 .nav-link {
-font-size: 20px;
+    font-size: 20px;
 }
-a:hover{
-color: white !important;
-background-color : #0077b3 !important; 
+
+a:hover {
+    color: white !important;
+    background-color: #0077b3 !important;
 }
+
 .centered-div {
-height: 50rem;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-padding-top: 30px;
-margin-top: 30px;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
 }
+
 .name {
-font-family: 'Playfair Display', serif;
-margin-top: 1rem;
-font-size: 1.5rem;
-font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
 .skill-container {
-height: 10px;
-background-color: #f1f1f1;
-border-radius: 5px;
-overflow: hidden;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
 }
+
 .fill {
-height: 100%;
-background-color: #3498db;
-transition: width 0.5s ease-in-out;
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.5s ease-in-out;
 }
-.design{
-background-color: #dbecff70;
-padding: 1rem;
+
+.design {
+    background-color: #dbecff70;
+    padding: 1rem;
 }
-h1{
-font-family: 'Playfair Display', serif;
-padding: 10px;
-border-bottom: 3px solid rgba(12, 160, 206, 0.87);
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    border-bottom: 3px solid rgba(12, 160, 206, 0.87);
 }
-h2{
-font-family: 'Playfair Display', serif;
+
+h2 {
+    font-family: 'Playfair Display', serif;
 }
-.font1{
+
+.font1 {
     font-family: 'Roboto', sans-serif;
 }
-.borderclass{
-border: 3px solid #0077b3;
+
+.borderclass {
+    border: 3px solid #0077b3;
 }
+
 .text-center {
-text-align: center!important;
+    text-align: center !important;
 }
-.design1{
-padding: 3px;
-border-bottom: 3px solid rgba(12, 160, 206, 0.87);
+
+.design1 {
+    padding: 3px;
+    border-bottom: 3px solid rgba(12, 160, 206, 0.87);
 }
-.other_works{
-text-decoration: none;
-color:black;
-text-align: center!important;
+
+.other_works {
+    text-decoration: none;
+    color: black;
+    text-align: center !important;
 }
-li{
-padding-bottom: 10px;
+
+li {
+    padding-bottom: 10px;
 }
-.view_button
-{
-    background: #0077b3; 
+
+.view_button {
+    background: #0077b3;
     color: white;
 }
-.view_button:hover{
-color: white !important;
-background-color : #33cccc !important; 
+
+.view_button:hover {
+    color: white !important;
+    background-color: #33cccc !important;
 }
-@media only screen and (max-width: 480px){
-    html, body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+
+@media only screen and (max-width: 480px) {
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 }
-#preloader{
+
+#preloader {
     background: white url(Images/Pre_Loader.gif) no-repeat center center;
     background-size: 40;
     height: 100vh;
     width: 100%;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1000;
+}
+
+#navbar {
+    background: linear-gradient(to right, #33cccc, #0077b3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#download_resume {
+    background: #33cccc;
+    color: white;
+    box-shadow: 4px 4px 0 #0077b3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#download_resume:active {
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 #0077b3;
+}
+
+#download_resume:hover {
+    color: white !important;
+    background: #33cccc !important;
+}
+
+.certificates {
+    background: #33cccc;
+    color: white;
+}
+
+.footer {
+    font-size: 1.7rem;
 }
