@@ -35,6 +35,16 @@ section {
     }
 }
 
+#preloader {
+    background: white url(Images/pre_loader/Pre_Loader.gif) no-repeat center center;
+    background-size: 40;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
 .navbar-nav {
     padding-right: 30px;
