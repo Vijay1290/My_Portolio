@@ -1,15 +1,14 @@
 var body = document.body;
 var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     loader.style.display = "none";
     body.style.overflowY = "scroll";
 })
 
 
-
 var i = 0;
-var txt = "I'm Vijay Sabrole";
+var txt = "I'm Web Developer & Python Developer";
 var speed = 400;
 
 function typeWriter() {
@@ -24,7 +23,6 @@ function typeWriter() {
     }
 }
 window.addEventListener('load', typeWriter);
-
 
 
 function toggleView() {
@@ -43,3 +41,21 @@ function toggleView() {
 }
 
 
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.nav-link');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector('.nav-link[href*=' + id + ']').classList.add('active');
+        }
+    });
+}
