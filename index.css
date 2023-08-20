@@ -101,6 +101,7 @@ section {
     overflow: hidden;
     z-index: 1;
     text-decoration: none;
+    box-shadow: 0 4px 4px 0 #0077b3;
 }
 
 .button:after {
@@ -130,6 +131,7 @@ section {
 
 .button:hover {
     color: #fff;
+    box-shadow: none;
 }
 
 .button:hover:before {
