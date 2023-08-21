@@ -138,6 +138,11 @@ section {
     width: 100%;
 }
 
+.special{
+    box-shadow: 6px 6px 10px #0077b3;
+    border-radius: 10px;
+    position: relative;
+}
 
 .design {
     background-color: #dbecff70;
